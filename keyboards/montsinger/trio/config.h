@@ -25,7 +25,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define DEVICE_VER      0x0001
 #define MANUFACTURER    Montsinger
 #define PRODUCT         Trio Rev. 1
-#define DESCRIPTION     Trio of keys and/or encoders
 
 /* key matrix size */
 #define MATRIX_ROWS 3
