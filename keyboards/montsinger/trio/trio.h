@@ -15,7 +15,6 @@
  */
 #pragma once
 
-#include "trio.h"
 #include "quantum.h"
 
 /* This a shortcut to help you visually see your layout.
