@@ -157,6 +157,8 @@ void        rgb_matrix_decrease_speed(void);
 void        rgb_matrix_decrease_speed_noeeprom(void);
 led_flags_t rgb_matrix_get_flags(void);
 void        rgb_matrix_set_flags(led_flags_t flags);
+void        rgb_matrix_set_flag(led_flags_t flag);
+void        rgb_matrix_unset_flag(led_flags_t flag);
 
 #ifndef RGBLIGHT_ENABLE
 #    define eeconfig_update_rgblight_current eeconfig_update_rgb_matrix
@@ -216,7 +218,6 @@ extern const rgb_matrix_driver_t rgb_matrix_driver;
 
 extern rgb_config_t rgb_matrix_config;
 
-extern bool         g_suspend_state;
 extern uint32_t     g_rgb_timer;
 extern led_config_t g_led_config;
 #ifdef RGB_MATRIX_KEYREACTIVE_ENABLED

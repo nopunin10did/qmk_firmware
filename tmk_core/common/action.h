@@ -70,6 +70,9 @@ void action_function(keyrecord_t *record, uint8_t id, uint8_t opt);
 /* keyboard-specific key event (pre)processing */
 bool process_record_quantum(keyrecord_t *record);
 
+/* keyboard-specific key code and event (pre)processing */
+bool process_record_quantum_keycode(uint16_t keycode, keyrecord_t *record);
+
 /* Utilities for actions.  */
 #if !defined(NO_ACTION_LAYER) && !defined(STRICT_LAYER_RELEASE)
 extern bool disable_action_cache;
