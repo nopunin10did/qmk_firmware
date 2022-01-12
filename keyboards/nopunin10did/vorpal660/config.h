@@ -22,7 +22,7 @@
 #define VENDOR_ID           0x4E50  // "NP"
 #define PRODUCT_ID          0x5642  // "V" 66
 #define DEVICE_VER          0x0001
-#define PRODUCT             Vorpal 660
+#define PRODUCT             Vorpal660
 
 /* key matrix size */
 #define MATRIX_ROWS         10
