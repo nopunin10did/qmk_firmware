@@ -25,9 +25,9 @@
 #define UNXCOPY LCTL(KC_INS)
 #define UNXPAST LSFT(KC_INS)
 #define LSA_DEL LSA_T(KC_DEL)
-#define FN_CALC LT(1,KC_CALC)
+#define FN_MUTE LT(1,KC_F16)
 #define SCRNSHT SGUI(KC_S)
-#define GUI_F16 LGUI_T(KC_F16)
+#define GUICALC LGUI_T(KC_CALC)
 #define ALT_GRV LALT_T(KC_GRV)
 #define RALTHOM RALT_T(KC_HOME)
 #define RGUIEND RGUI_T(KC_END)
@@ -38,8 +38,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     DB_STOP, DB_CONT, QK_GESC, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_MINS, KC_EQL,           KC_BSPC, KC_DEL,
     STEP_IN, DB_DTCH, KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC, KC_RBRC,                   KC_PGUP,
     STEPOUT, UNXCOPY, KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT, KC_BSLS,          KC_ENT,  KC_PGDN,
-    STEPOVR, UNXPAST, KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    LSA_DEL, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,          KC_UP,   FN_CALC,
-    KC_INS,  SCRNSHT, KC_RCTL, GUI_F16, ALT_GRV,                            KC_SPC,                             RALTHOM, RGUIEND,          KC_LEFT, KC_DOWN, KC_RGHT
+    STEPOVR, UNXPAST, KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    LSA_DEL, KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT,          KC_UP,   FN_MUTE,
+    KC_INS,  SCRNSHT, KC_RCTL, GUICALC, ALT_GRV,                            KC_SPC,                             RALTHOM, RGUIEND,          KC_LEFT, KC_DOWN, KC_RGHT
   ),
 
 [1] = LAYOUT( 
